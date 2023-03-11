@@ -42,9 +42,15 @@ const game = () => {
     console.log(`Computer Score: ${computerScore}`);
     console.log(`Player Score: ${playerScore}`);
   }
+
+  console.log("========END OF GAME========");
+  if (playerScore > computerScore) {
+    console.log("Player Wins");
+  } else if (playerScore < computerScore) {
+    console.log("Computer Wins");
+  } else {
+    console.log("it's a tie")
+  }
 }
 
 game();
-
-console.log(computerScore);
-console.log(playerScore);
