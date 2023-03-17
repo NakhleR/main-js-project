@@ -1,56 +1,63 @@
-const computerPlay = () => {
-  const items = ['Rock', 'Paper', 'Scissors'];
+'use strict'
 
-  return (items[Math.floor(Math.random() * items.length)]);
+const rock = document.querySelector('.rock')
+const paper = document.querySelector('.paper')
+const scissors = document.querySelector('.scissors')
+const computer = document.querySelector('.computer-choice-text')
+const verdict = document.querySelector('.winner-text')
+
+let playerPick = ''
+
+rock.addEventListener('click', () => {
+    playerPick = 'rock'
+})
+
+paper.addEventListener('click', () => {
+    playerPick = 'paper'
+})
+
+scissors.addEventListener('click', () => {
+    playerPick = 'scissors'
+})
+
+/**
+ * Computer Play
+ */
+const computerPlay = () => {
+    const items = ['Rock', 'Paper', 'Scissors'];
+
+    return (items[Math.floor(Math.random() * items.length)]);
 }
 
-let playerScore = 0;
-let computerScore = 0;
-
+/**
+ * Round Outcome
+ */
 const playRound = (player, computer) => {
 
-  let playerPick = player.toUpperCase();
-  let computerPick = computer.toUpperCase();
-
-  console.log(`Player chose ${playerPick}`);
-  console.log(`Computer chose ${computerPick}`);
-  if (playerPick === computerPick) {
-    return "It's a tie !";
-  }
-
-  if ((playerPick == "ROCK" && computerPick == "SCISSORS") || (playerPick == "PAPER" && computerPick == "ROCK") ||
-    (playerPick == "SCISSORS" && computerPick == "PAPER")) {
-    playerScore++;
-    return `You win! ${player} beats ${computer}.`;
-  } else {
-    computerScore++;
-    return `You lose! ${computer} beats ${player}.`;
-  }
+    if (player === computer) {
+        return "It's a tie !"
+    }
+    if ((player == "rock" && computer == "Scissors") || (player == "paper" && computer == "Rock") ||
+        (player == "scissors" && computer == "Paper")) {
+        return 'player'
+    } else {
+        return 'computer'
+    }
 }
 
+/**
+ * Game
+ */
+const game = (playerPick) => {
 
-const game = () => {
-  for (let i = 0; i < 5; i++) {
-    const player = prompt("Rock,Paper,Scissors");
-    const computer = computerPlay();
+    computer.value = computerPlay()
+    const result = playRound(playerPick, computer.value);
+    computer.textContent = computer.value
 
-    console.log(`=======ROUND ${i + 1}=======`);
 
-    const result = playRound(player, computer);
 
-    console.log(result);
-    console.log(`Computer Score: ${computerScore}`);
-    console.log(`Player Score: ${playerScore}`);
-  }
-
-  console.log("========END OF GAME========");
-  if (playerScore > computerScore) {
-    console.log("Player Wins");
-  } else if (playerScore < computerScore) {
-    console.log("Computer Wins");
-  } else {
-    console.log("it's a tie")
-  }
+    verdict.value = result
+    verdict.textContent = verdict.value
 }
 
-game();
+game(playerPick);
