@@ -8,26 +8,38 @@
 </head>
 
 <body>
-  <div class="score-container">
-    <div class="score">
-      <h1>SCORE</h1>
-      <div class="num">?</div>
+  <div class="container-all">
+    <div class="container-left">
+      <div class="container-choice">
+        <button class="rock" value="rock">ROCK</button>
+        <button class="paper" value="paper">PAPER</button>
+        <button class="scissors" value="scissors">SCISSORS</button>
+      </div>
+    </div>
+    <div class="container-right">
+      <div class="score-container">
+        <h1 id="score">SCORE</h1>
+        <div class="score-left">
+          <h2>Player</h2>
+          <div class="playerScore">0</div>
+        </div>
+        <div class="score-right">
+          <h2>Computer</h2>
+          <div class="computerScore">0</div>
+        </div>
+      </div>
+      <div class="computer-choice-container">
+        <h1>Computer Choice</h1>
+        <div class="computer-choice-text">?</div>
+      </div>
+      <div class="winner-container">
+        <h1>Winner</h1>
+        <div class="winner-text">?</div>
+      </div>
     </div>
   </div>
-  <div class="container-choice">
-    <div class="mini-container">
-      <button class="rock" value="rock">ROCK</button>
-      <button class="paper" value="paper">PAPER</button>
-      <button class="scissors" value="scissors">SCISSORS</button>
-    </div>
-  </div>
-  <div class="computer-choice-container">
-    <h1>Computer Choice</h1>
-    <div class="computer-choice-text">?</div>
-  </div>
-  <div class="winner">
-    <h1>Winner</h1>
-    <div class="winner-text">?</div>
+  <div class="play-again-container">
+    <button id="play-again-btn">Play Again</button>
   </div>
   <script src="script.js"></script>
 </body>
