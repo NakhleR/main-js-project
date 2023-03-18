@@ -1,178 +1,178 @@
 body {
-    background-color: blueviolet;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-y: hidden;
-    font-family: 'Poppins', sans-serif;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container-all {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 13rem;
-    padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13rem;
+  padding-top: 2rem;
 }
 
 .container-choice {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: rgb(162, 99, 221);
-    height: 45em;
-    box-shadow: 0 18px 200px -60px black;
-    border-radius: 50px;
-    width: 650px;
-    padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(162, 99, 221);
+  height: 45em;
+  box-shadow: 0 18px 200px -60px black;
+  border-radius: 50px;
+  width: 650px;
+  padding: 4rem;
 }
 
 .container-choice button {
-    font-size: 35px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
+  font-size: 35px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
 
 }
 
 .container-left {
-    width: 50%;
-    height: 100%;
+  width: 50%;
+  height: 100%;
 }
 
 .rock {
-    height: 90px;
-    width: 500px;
-    border-radius: 50px;
-    background-color: blueviolet;
+  height: 90px;
+  width: 500px;
+  border-radius: 50px;
+  background-color: blueviolet;
 }
 
 .scissors {
-    height: 90px;
-    width: 500px;
-    border-radius: 50px;
-    background-color: blueviolet;
+  height: 90px;
+  width: 500px;
+  border-radius: 50px;
+  background-color: blueviolet;
 }
 
 .paper {
-    height: 90px;
-    width: 500px;
-    border-radius: 50px;
-    background-color: blueviolet;
+  height: 90px;
+  width: 500px;
+  border-radius: 50px;
+  background-color: blueviolet;
 }
 
 
 .container-right {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 7rem;
-    align-items: center;
-    height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 7rem;
+  align-items: center;
+  height: 100%;
 }
 
 .score-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: rgb(162, 99, 221);
-    width: 400px;
-    height: 200px;
-    box-shadow: 0 18px 200px -60px black;
-    border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(162, 99, 221);
+  width: 400px;
+  height: 200px;
+  box-shadow: 0 18px 200px -60px black;
+  border-radius: 50px;
 }
 
 .score-container #score {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .score-left {
-    align-items: center;
-    margin-top: 0;
-    width: 50%;
-    height: 100%;
+  align-items: center;
+  margin-top: 0;
+  width: 50%;
+  height: 100%;
 }
 
 .score-left div {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .score-right {
-    align-items: center;
-    margin-top: 0;
-    width: 50%;
-    height: 100%;
+  align-items: center;
+  margin-top: 0;
+  width: 50%;
+  height: 100%;
 }
 
 .score-right div {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .score-left,
 .score-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  height: 130px;
 }
 
 .computer-choice-container {
-    background-color: rgb(162, 99, 221);
-    width: 400px;
-    height: 200px;
-    box-shadow: 0 18px 200px -60px black;
-    border-radius: 50px;
+  background-color: rgb(162, 99, 221);
+  width: 400px;
+  height: 200px;
+  box-shadow: 0 18px 200px -60px black;
+  border-radius: 50px;
 }
 
 .computer-choice-container h1 {
-    text-align: center;
+  text-align: center;
 }
 
 .computer-choice-text {
-    font-size: 30px;
-    text-align: center;
+  font-size: 30px;
+  text-align: center;
 }
 
 .winner-container {
-    background-color: rgb(162, 99, 221);
-    width: 400px;
-    height: 200px;
-    box-shadow: 0 18px 200px -60px black;
-    border-radius: 50px;
+  background-color: rgb(162, 99, 221);
+  width: 400px;
+  height: 200px;
+  box-shadow: 0 18px 200px -60px black;
+  border-radius: 50px;
 }
 
 .winner-container h1 {
-    text-align: center;
+  text-align: center;
 }
 
 .winner-text {
-    font-size: 30px;
-    text-align: center;
+  font-size: 30px;
+  text-align: center;
 }
 
 .play-again-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(162, 99, 221);
-    width: 400px;
-    height: 200px;
-    border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(162, 99, 221);
+  width: 400px;
+  height: 200px;
+  border-radius: 50px;
 }
 
 .play-again-container #play-again-btn {
-    height: 90px;
-    width: 200px;
-    border-radius: 50px;
-    background-color: blueviolet;
-    font-size: 30px;
-    font-family: 'Popins', sans-serif;
-    font-weight: bold;
+  height: 90px;
+  width: 200px;
+  border-radius: 50px;
+  background-color: blueviolet;
+  font-size: 30px;
+  font-family: 'Popins', sans-serif;
+  font-weight: bold;
 }
